@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav{
+
+background-color: #FFF;
+height: 110px;
+display: flex;
+align-items: center;
+
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.nav a {
+  color: black;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+.nav a:hover {
+  color: #B56953;
+}
+
+.hero{
+  background: url(./s3.jpg);
+  background-repeat: no-repeat;
+  background-position: center -300px;
+  background-size: 100%;
+  background-color:#fff;
+  height:70vh;
+  margin-bottom: 2em;
+}
+.hero h1{
+  font-weight: 300;
+  font-family: Cormorant;
+  font-size: 5em;
+  color:#FFF;
+  width:60%;
+  margin:auto;
+  padding-top:100px;
+}
+.hero button{
+  background-color:#000;
+  color:#FFF;
+  font-family: 'Raleway', sans-serif; 
+  font-size: 1.1em;
+  margin-top: 10px;
+  padding:16px 40px;
+  border: none;
+}
+
+.content1 p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+  line-height: 2em;
+  margin:auto;
+  margin-bottom: 4em;
+  font-weight: 300;
+  width: 50%;
+}
+.content1 p::selection{
+  background-color: #B56953;
+  color: #FFF;
+}
+.content1 h2::selection{
+  background-color: #B56953;
+  color: #FFF;
+}
+
+
+.content1 h2{
+  font-family: 'Cormorant', serif;
+  font-size: 3em;
+  line-height: 1.5em;
+  margin: 2em auto 0.5em auto;
+  font-weight: 400;
+  width: 50%;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 4em auto;
+  width: 90%;
+}
+.cards .card{
+  width:40%;
+  background-color: #FAF9F5;
+}
+.card .card-text{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1em;
+  line-height: 2em;
+  text-align: left;
+  margin-left:10%;
+  margin-bottom: 2em;
+  font-weight: 300;
+  width: 50%;
+}
+.card .card-text h2{
+  font-size: 2em;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+.card .card-text h3{
+  font-size: 1em;
+  font-family: 'Raleway', serif;
+  font-weight: 500;
+  color:#B56953;
+}
+.card .card-text button{
+  color:#000;
+  font-size: 0.8em;
+  background-color: #FAF9F5;
+  border: none;
+  cursor: pointer;
+}
+.card .card-text button:hover{
+  color:#B56953;
+}
+.card .card-text h2::selection{
+  background-color: #B56953;
+  color: #FFF;
+}
+.card .card-text p::selection{
+  background-color: #B56953;
+  color: #FFF;
+}
+.cards .card img{
+  width: 100%;
+  transform: translate(10%,0%);
+transition: all 0.5s ease-in-out;
+}
+.card img:hover{
+  transform: translate(8%,0%);
+}
+
+
+.lifeat{
+  background-image: url(life.jpg);
+  width: 80%;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.lifeat:hover{
+  background-position: 10% 0;
+}
+
+.lifeat-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 40%;
+  background-color: #FAF9F5;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+.lifeat-container:hover{
+  transform: translateX(1%);
+}
+.lifeat-container-text{
+  
+  margin: 5% auto 10% 10%;
+  width: 80%;
+
+  
+}
+.lifeat-container h1{
+  font-family: 'Cormorant', serif;
+  font-size: 2.2em;
+  font-weight: 400;
+  text-align: left;
+}
+.lifeat-container p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: left;
+  color:#222;
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+.lifeat-container button{
+  background-color: #FAF9F5;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+.lifeat-container button:hover{
+  color: #B56953;
+}
+
+.amenities{
+  margin-top: 5em;
+}
+.amenities-text h1{
+  font-family: 'Cormorant', serif;
+  font-size: 3em;
+  font-weight: 300;
+  width: 60%;
+  margin: auto;
+}
+.amenities-text p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+  line-height: 2em;
+  text-align: center;
+  margin: auto;
+  margin-top: 1.5em;
+  font-weight: 300;
+  width: 45%;
+}
+
+.amenities-container{
+  display: flex;
+  align-items: center;
+
+  flex-direction: row;
+  width: 60%;
+  margin: auto;
+  margin-top: 2em;
+}
+.feature{
+  width: 200px;
+  margin: 1em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.6em;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.feature img{
+  width: 30%;
+  transform: translate(10%,0%);}
+
+
+.enquire{
+  background-color: #F1EEE3;
+  margin: auto;
+  padding: 4em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.enquire h1{
+  font-family: 'Cormorant', serif;
+  font-size: 2.6em;
+  font-weight: 400;
+  text-align: center;
+}
+.enquire button{
+  background:transparent;
+  border: 1px solid #111;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+.enquire button:hover{
+  background-color: #B56953;
+  color: #FFF;
+}
+
+.footer{
+  background-color: #FAF9F5;
+  margin: auto;
+  padding: 4em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+}
+.footer div{
+  width: 100%;
+  text-align: left;
+  padding: 2.4em;
+}
+.footer h1{
+  font-family: 'Cormorant', serif;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: left;
+}
+.footer p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: left;
+  color:#222;
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+.footer-cp{
+  padding:1em 2em;
+  background-color: #F3ECE8;
+}
+
+.room img{
+  width: 60%;
+  transition: all 0.3s ease-in-out;
+}
+.room img:hover{
+  transform: translate(1%,0%);
+}
+.room-info{
+  margin: 1em auto 3em;
+  padding: 0.5em;
+  width:60%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.room-info h3{
+  font-family: 'Cormorant', serif;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: left;
+  padding: 0em;
+  margin: 0em;
+}
+.room-info p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: left;
+  color:#222;
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+
+.roomslist-header{
+  background-color: #FAF9F5;
+  margin: 0 auto 2em 0;
+  font-family: 'Cormorant', serif;
+  padding: 1.5em;
+  font-size: 3em;
+  text-align: left;
+  
+}
+
+.aboutheader{
+  background-image: url(abt-bg.jpg);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  font-family: 'Cormorant', serif;
+  color: #FFF;
+}
+
+
+.abouttext{
+  width: 65%;
+  margin: 6em auto;
+}
+.abouttext h1{
+  font-size: 2.5em;
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+
+}
+.abouttext p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+.abouttext img{
+  width: 100%;
+}
+
+.seegoa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+.seegoa-text{
+  width: 60%;
+}
+.seegoa h1{
+  font-family: 'Cormorant', serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: center;
+}
+.seegoa p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.4em;
+  line-height: 2em;
+  text-align: center;
+  color:#222;
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+.seegoa-img{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-bottom: 6em;
+}
+.seegoa-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  transition: all 0.3s ease-in-out;
+}
+.seegoa-cont:hover{
+  transform: translate(-1%,0%);
+}
+.seegoa-cont:nth-child(1){
+  width: 30%;
+  height: 50vh;
+  background-image: url(sg-img-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.seegoa-cont:nth-child(2){
+  width: 30%;
+  height: 50vh;
+  background-image: url(sg-img-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.seegoa-img-text{
+  width: 50%;
+  font-family: 'cormorant', serif;
+  font-size: 2em;
+  transform: translate(-5%,0%);
+  padding: 1em;
+  text-align: left;
+  background-color: #F1EEE3;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.seegoa-img-text:hover{
+  transform: translate(0%,0%);
+
+}
+
+.promoheader{
+  background-image: url(pr-bg.jpg);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  font-family: 'Cormorant', serif;
+  color: #FFF;
+}
+
+
+.perfholiday{
+  width: 70%;
+  margin: 6em auto;
+}
+.perfholiday h1{
+  font-size: 3em;
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+}
+
+.offers{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.offer{
+  height:60vh;
+  width: 30%;
+  margin: 0 1em;
+  padding: 2em;
+  background-color: #F1EEE3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.offer h2{
+  font-family: 'Cormorant', serif;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  color:#FFF;
+}
+.offer p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+  line-height: 2em;
+  text-align: center;
+  color:#fff;
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+.offer button{
+  font-family: 'Josefin Sans', sans-serif;
+  border: #fff solid 1px;
+  background-color: transparent;
+  padding: 1.5em 2.5em;
+  color:#fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.offer button:hover{
+  background-color: #fff;
+  color: #222;
+}
+
+.offer:nth-child(1){
+  background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(g5.jpg);
+}
+.offer:nth-child(2){
+  background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(wedd3.jpg);
+}
+.offer:nth-child(3){
+  background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(festive.jpg);
+}
+
